@@ -10,7 +10,7 @@ export class ProductEntity {
     @Column()
     brand: string;
     @Column()
-    price: number;
+    price: string;
     @CreateDateColumn()
     createdDate: Date
 }

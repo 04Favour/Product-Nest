@@ -11,4 +11,8 @@ export class ProductService {
     async createProduct(payload){
         return await this.productRepository.save(payload)
     }
+
+    async getAll(){
+        return await this.productRepository.find()
+    }
 }
